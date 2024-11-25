@@ -13,13 +13,21 @@
             align-items: center;
             padding: 20px;
         }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
         .product {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             width: 250px;
             padding: 20px;
-            margin: 10px;
             text-align: center;
         }
         .product img {
@@ -50,6 +58,10 @@
         .btn-add:hover, .btn-cart:hover {
             background-color: #45a049;
         }
+        .btn-cart {
+            margin-top: 30px;
+            width: auto;
+        }
     </style>
 </head>
 <body>
@@ -57,53 +69,54 @@
     <h1>SMARTHPHONE SHOP</h1>
 
     <!-- Catálogo de Celulares -->
-   
-    <div class="product">
-        <img src="pro14.png" alt="14pro">
-        <h3>Iphone 14 pro </h3>
-        <p>Negro Espacial (512GB)</p>
-        <div class="price">$15,999.00</div>
-        <button class="btn-add" onclick="agregarAlCarrito('Iphone 14 pro',15999, 'pro14.png')">Agregar al Carrito</button>
-    </div>
+    <div class="product-container">
+        <div class="product">
+            <img src="pro14.png" alt="14pro">
+            <h3>Iphone 14 pro</h3>
+            <p>Negro Espacial (512GB)</p>
+            <div class="price">$15,999.00</div>
+            <button class="btn-add" onclick="agregarAlCarrito('Iphone 14 pro',15999, 'pro14.png')">Agregar al Carrito</button>
+        </div>
 
-    <div class="product">
-        <img src="samsumg.png" alt="samsumg">
-        <h3>Samsumg s23 Ultra </h3>
-        <p>Phantom black (512GB) 12 GB RAM</p>
-        <div class="price">$14,400.00</div>
-        <button class="btn-add" onclick="agregarAlCarrito('Samsumg s23 Ultra', 14400, 'samsumg.png')">Agregar al Carrito</button>
-    </div>
+        <div class="product">
+            <img src="samsumg.png" alt="samsumg">
+            <h3>Samsumg s23 Ultra</h3>
+            <p>Phantom black (512GB) 12 GB RAM</p>
+            <div class="price">$14,400.00</div>
+            <button class="btn-add" onclick="agregarAlCarrito('Samsumg s23 Ultra', 14400, 'samsumg.png')">Agregar al Carrito</button>
+        </div>
 
-	 <div class="product">
-        <img src="reloj.png" alt="reloj">
-        <h3>Apple Watch Ultra </h3>
-        <p>Titanio Negro 44mm</p>
-        <div class="price">$19,500.00</div>
-        <button class="btn-add" onclick="agregarAlCarrito('Apple Watch Ultra ', 19000, 'reloj.png')">Agregar al Carrito</button>
-    </div>
+        <div class="product">
+            <img src="reloj.png" alt="reloj">
+            <h3>Apple Watch Ultra</h3>
+            <p>Titanio Negro 44mm</p>
+            <div class="price">$19,500.00</div>
+            <button class="btn-add" onclick="agregarAlCarrito('Apple Watch Ultra ', 19000, 'reloj.png')">Agregar al Carrito</button>
+        </div>
 
-	 <div class="product">
-        <img src="cargador.png" alt="cargador">
-        <h3>Samsumg Cargador</h3>
-        <p>50 W tipo C(1.80cm)</p>
-        <div class="price">$629.00</div>
-        <button class="btn-add" onclick="agregarAlCarrito('Samsumg Cargador', 629, 'cargador.png')">Agregar al Carrito</button>
-    </div>
+        <div class="product">
+            <img src="cargador.png" alt="cargador">
+            <h3>Samsumg Cargador</h3>
+            <p>50 W tipo C(1.80cm)</p>
+            <div class="price">$629.00</div>
+            <button class="btn-add" onclick="agregarAlCarrito('Samsumg Cargador', 629, 'cargador.png')">Agregar al Carrito</button>
+        </div>
 
-	 <div class="product">
-        <img src="funda.png" alt="funda">
-        <h3>Apple funda Iphone 14 pro</h3>
-        <p>Color Negro </p>
-        <div class="price">$1099</div>
-        <button class="btn-add" onclick="agregarAlCarrito('Apple funda Iphone 14 pro', 1099, 'funda.png')">Agregar al Carrito</button>
-    </div>
+        <div class="product">
+            <img src="funda.png" alt="funda">
+            <h3>Apple funda Iphone 14 pro</h3>
+            <p>Color Negro</p>
+            <div class="price">$1099</div>
+            <button class="btn-add" onclick="agregarAlCarrito('Apple funda Iphone 14 pro', 1099, 'funda.png')">Agregar al Carrito</button>
+        </div>
 
-	 <div class="product">
-        <img src="cargadora.png" alt="cargadora">
-        <h3>Apple Cargador</h3>
-        <p>20 W</p>
-        <div class="price">$550</div>
-        <button class="btn-add" onclick="agregarAlCarrito('Apple Cargador', 550, 'cargadora.png')">Agregar al Carrito</button>
+        <div class="product">
+            <img src="cargadora.png" alt="cargadora">
+            <h3>Apple Cargador</h3>
+            <p>20 W</p>
+            <div class="price">$550</div>
+            <button class="btn-add" onclick="agregarAlCarrito('Apple Cargador', 550, 'cargadora.png')">Agregar al Carrito</button>
+        </div>
     </div>
 
     <!-- Botón para ir al carrito -->
